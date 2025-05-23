@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Color Gradient Picker</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Gradient Color Picker</h1>
+        <div class="gradient-box"></div>
+        <div class="row options">
+            <div class="column direction">
+                <p>Arah Gradient</p>
+                <div class="select-box">
+                    <select>
+                        <option value="to top">Atas</option>
+                        <option value="to right top">Kanan Atas</option>
+                        <option value="to right" selected>Kanan</option>
+                        <option value="to right bottom">Kanan Bawah</option>
+                        <option value="to bottom">Bawah</option>
+                        <option value="to left bottom">Kiri Bawah</option>
+                        <option value="to left">Kiri</option>
+                        <option value="to left top">Kiri Atas</option>
+                    </select>
+                </div>
+            </div>
+            <div class="column colors">
+                <p>Warna</p>
+                <div class="inputs">
+                    <input type="color" class="color1" value="#87CEEB">
+                    <input type="color" class="color2" value="#00BFFF">
+                </div>
+            </div>
+        </div>
+        <textarea class="row" disabled>background: linear-gradient(to right, #87CEEB, #00BFFF)</textarea>
+        <div class="row buttons">
+            <button class="refresh">Acak Warna</button>
+            <button class="copy">Salin Kode</button>
+        </div>
+    </div>
+    <script src="main.js" defer></script>
+</body>
+</html>
