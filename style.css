@@ -111,3 +111,47 @@ textarea {
 .buttons button:hover {
     background: rgb(0, 130, 190);
 }
+
+@media screen and (max-width: 576px) {
+    .wrapper {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .wrapper h1 {
+        font-size: 1.8rem;
+    }
+
+    .wrapper .gradient-box {
+        height: 180px;
+    }
+
+    .row {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .row :where(.column, button) {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .colors input {
+        width: calc(100% / 2 - 10px);
+        margin-left: 5px;
+    }
+
+    .buttons button {
+        padding: 8px;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    textarea {
+        font-size: 12px;
+    }
+
+    .options p {
+        font-size: 1rem;
+    }
+}
